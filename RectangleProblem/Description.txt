@@ -1,0 +1,10 @@
+﻿Program works on the following ways:
+1. First the page loads.
+2. After that the user input the data and press the submit button. 
+3. Then the rectangle show up with respect to the data given by the user.
+3. If any textbox is empty the user will get the message to fill all the box.
+
+Problem occuring:
+1. After the postback user sees the rectangle drawn but cannot draw on the same image again.
+2. Tried to put the all information in the List Collection of each rectangle but failed.
+3. After each postback new image is drawn. 
