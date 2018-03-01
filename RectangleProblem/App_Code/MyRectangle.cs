@@ -39,5 +39,17 @@ public class MyRectangle
     myGraphics.DrawLine(myPen, p3, p4);
     myGraphics.DrawLine(myPen, p4, p1);
   }
+   public bool Intersection(MyRectangle rec1, MyRectangle rec2)
+  {
+    if (rec1.XValue + rec1.WidthValue < rec2.XValue || rec2.XValue + rec2.WidthValue < rec1.XValue ||
+      rec1.YValue + rec1.HeightValue < rec2.YValue || rec2.YValue + rec2.HeightValue < rec1.YValue)
+    {
+
+      return false;
+    }
+    else
+      return true;
+  }
+  
 
 }
